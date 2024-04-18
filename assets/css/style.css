@@ -414,7 +414,7 @@ header{
 .saveBtn{
   color: var(--on-background);
   padding-block: 2px;
-  width: 150px;
+  width: 70px;
   justify-self: start;
   background-color: var(--primary);
   border-radius: var(--radius-4);
