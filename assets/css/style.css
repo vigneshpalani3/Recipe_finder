@@ -414,7 +414,7 @@ header{
 .saveBtn{
   color: var(--on-background);
   padding-block: 2px;
-  width: 200px;
+  width: 150px;
   justify-self: start;
   background-color: var(--primary);
   border-radius: var(--radius-4);
@@ -462,6 +462,9 @@ header{
     max-width: 800px;
     margin-inline: auto;
     grid-template-columns: 350px 1fr;
+  }
+  .saveBtn{
+    width:250px;
   }
 }
 
