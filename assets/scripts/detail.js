@@ -58,7 +58,6 @@ function addBtnEvent(){
     if(!savedRecipe.includes(mealId)){
       savedRecipe.push(mealId);
       setRecipe(savedRecipe);
-      console.log(savedRecipe);
     }
   });
 }

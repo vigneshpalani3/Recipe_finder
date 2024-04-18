@@ -340,10 +340,15 @@ header{
   cursor: pointer;
   border-radius: var(--radius-4);
   background-color:var(--badge) ;
+
+  & p{
+    color: var(--on-background);
+  }
 }
 
 .thumb{
   align-self: center;
+  position: relative;
 }
 .thumb img{
   width:100%;
@@ -420,9 +425,21 @@ header{
   margin-bottom: 1rem;
 }
 
-.saved-recipes-main p{
+.saved-recipes-main > p{
   text-align: center;
   color: var(--error);
+}
+
+.thumb .delBtn{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 1px 7px;
+  border-radius: var(--radius-4);
+  font-size: var(--fs-normal);
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 @media (min-width:768px){

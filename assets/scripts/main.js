@@ -3,7 +3,6 @@ const filterBtns = document.querySelectorAll('.food-filter');
 filterBtns.forEach(btn=>{
   btn.addEventListener('click',(event)=>{
     const btnName = event.target.textContent;
-    console.log(btnName);
     window.location.href=`recipes.html?btnName=${encodeURIComponent(btnName)}`;
   });
 });
