@@ -40,12 +40,12 @@
 
   /* Font Size */
   --fs-base: 62.5%;
-  --fs-3xl: 3.2rem;
-  --fs-2xl: 2.8rem;
-  --fs-xl: 2.6rem;
-  --fs-large: 2.4rem;
-  --fs-normal: 2rem;
-  --fs-medium: 1.8rem;
+  --fs-3xl: 2.8rem;
+  --fs-2xl: 2.4rem;
+  --fs-xl: 2.2rem;
+  --fs-large: 2rem;
+  --fs-normal: 1.8rem;
+  --fs-medium: 1.6rem;
   --fs-small: 1.4rem;
   --fs-xs: 1.2rem;
 
@@ -324,7 +324,7 @@ header{
 .recipes-main,
 .saved-recipes-main{
   display: grid;
-  grid-template-columns: repeat(auto-fit,200px);
+  grid-template-columns: repeat(auto-fit,250px);
   grid-template-rows:repeat(auto-fit,minmax(250px,1fr)) ;
   padding: 1rem;
   gap: 20px;
@@ -442,6 +442,26 @@ header{
   border: 1px solid var(--primary);
 }
 
+@media (min-width:520px){
+  :root{
+    --fs-3xl: 3.2rem;
+    --fs-2xl: 2.8rem;
+    --fs-xl: 2.6rem;
+    --fs-large: 2.4rem;
+    --fs-normal: 2rem;
+    --fs-medium: 1.8rem;
+    --fs-small: 1.4rem;
+    --fs-xs: 1.2rem;
+  }
+  .recipes-main,
+  .saved-recipes-main{
+    grid-template-columns: repeat(auto-fit,200px);
+  }
+  .saveBtn{
+    width: 170px;
+  }
+}
+
 @media (min-width:768px){
   .index-search-box{
     background: url('../images/hero-banner-medium.jpg') no-repeat;
@@ -465,6 +485,10 @@ header{
   }
   .saveBtn{
     width:250px;
+  }
+  .recipes-main,
+  .saved-recipes-main{
+    justify-content: start;
   }
 }
 
